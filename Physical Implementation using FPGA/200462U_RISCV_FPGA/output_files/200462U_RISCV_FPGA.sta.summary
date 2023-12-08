@@ -1,0 +1,113 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'RISC_V:RISC_V_INST|Datapath:dp|flopr:pcreg|q[2]'
+Slack : -30.860
+TNS   : -1465.975
+
+Type  : Slow 1200mV 85C Model Setup 'clock_divider:clock_divider_INST|clock_out'
+Slack : -25.141
+TNS   : -372609.362
+
+Type  : Slow 1200mV 85C Model Setup 'clk'
+Slack : -4.073
+TNS   : -110.638
+
+Type  : Slow 1200mV 85C Model Hold 'RISC_V:RISC_V_INST|Datapath:dp|flopr:pcreg|q[2]'
+Slack : -4.375
+TNS   : -72.434
+
+Type  : Slow 1200mV 85C Model Hold 'clock_divider:clock_divider_INST|clock_out'
+Slack : -1.203
+TNS   : -7.390
+
+Type  : Slow 1200mV 85C Model Hold 'clk'
+Slack : 0.626
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -40.265
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'RISC_V:RISC_V_INST|Datapath:dp|flopr:pcreg|q[2]'
+Slack : -2.314
+TNS   : -1088.516
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clock_divider:clock_divider_INST|clock_out'
+Slack : -1.285
+TNS   : -22380.845
+
+Type  : Slow 1200mV 0C Model Setup 'RISC_V:RISC_V_INST|Datapath:dp|flopr:pcreg|q[2]'
+Slack : -28.601
+TNS   : -1368.227
+
+Type  : Slow 1200mV 0C Model Setup 'clock_divider:clock_divider_INST|clock_out'
+Slack : -23.292
+TNS   : -345205.649
+
+Type  : Slow 1200mV 0C Model Setup 'clk'
+Slack : -3.684
+TNS   : -99.928
+
+Type  : Slow 1200mV 0C Model Hold 'RISC_V:RISC_V_INST|Datapath:dp|flopr:pcreg|q[2]'
+Slack : -3.868
+TNS   : -64.057
+
+Type  : Slow 1200mV 0C Model Hold 'clock_divider:clock_divider_INST|clock_out'
+Slack : -1.009
+TNS   : -5.554
+
+Type  : Slow 1200mV 0C Model Hold 'clk'
+Slack : 0.572
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -40.265
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'RISC_V:RISC_V_INST|Datapath:dp|flopr:pcreg|q[2]'
+Slack : -2.165
+TNS   : -970.509
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clock_divider:clock_divider_INST|clock_out'
+Slack : -1.285
+TNS   : -22380.845
+
+Type  : Fast 1200mV 0C Model Setup 'RISC_V:RISC_V_INST|Datapath:dp|flopr:pcreg|q[2]'
+Slack : -15.898
+TNS   : -734.845
+
+Type  : Fast 1200mV 0C Model Setup 'clock_divider:clock_divider_INST|clock_out'
+Slack : -12.698
+TNS   : -185980.898
+
+Type  : Fast 1200mV 0C Model Setup 'clk'
+Slack : -1.398
+TNS   : -37.108
+
+Type  : Fast 1200mV 0C Model Hold 'RISC_V:RISC_V_INST|Datapath:dp|flopr:pcreg|q[2]'
+Slack : -2.376
+TNS   : -50.675
+
+Type  : Fast 1200mV 0C Model Hold 'clock_divider:clock_divider_INST|clock_out'
+Slack : -0.876
+TNS   : -11.549
+
+Type  : Fast 1200mV 0C Model Hold 'clk'
+Slack : 0.286
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -34.163
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clock_divider:clock_divider_INST|clock_out'
+Slack : -1.000
+TNS   : -17417.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'RISC_V:RISC_V_INST|Datapath:dp|flopr:pcreg|q[2]'
+Slack : -0.936
+TNS   : -401.418
+
+------------------------------------------------------------

@@ -1,0 +1,2 @@
+Info (10281): Verilog HDL Declaration information at Datapath.sv(30): object "Con_blt" differs only in case from object "Con_BLT" in the same scope File: C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/Datapath.sv Line: 30
+Info (10281): Verilog HDL Declaration information at Datapath.sv(29): object "Con_bgt" differs only in case from object "Con_BGT" in the same scope File: C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/Datapath.sv Line: 29

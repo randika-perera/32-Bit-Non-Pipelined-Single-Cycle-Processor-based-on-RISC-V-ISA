@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Sun Dec 03 10:52:11 2023
+Quartus Prime Version : 17.1.0 Build 590 10/25/2017 SJ Lite Edition
+Revision Name : 200462U_RISCV_FPGA
+Top-level Entity Name : CPU_Top
+Family : Cyclone IV E
+Total logic elements : 33,906
+    Total combinational functions : 16,562
+    Dedicated logic registers : 17,446
+Total registers : 17446
+Total pins : 61
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

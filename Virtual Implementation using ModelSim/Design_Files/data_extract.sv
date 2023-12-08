@@ -1,0 +1,51 @@
+`timescale 1ns / 1ps
+
+module data_extract#(
+    parameter WIDTH = 32
+    )
+    (
+    input  logic [WIDTH-1:0] inst,    // 32-bit input port that contains the instruction to be parsed
+    input  logic [WIDTH-1:0] data,    // 32-bit input port that contains the data to be parsed
+    output logic [WIDTH-1:0] y        // 32-bit output port that contains the extracted data
+    );
+
+    logic [31:0] Imm_out;    // 32-bit signal that contains the immediate value extracted from the instruction
+    logic [15:0] s_bit;      // 16-bit signal that contains the signed bit of the extracted data
+    logic [7:0]  e_bit;      //  8-bit signal that contains the exponent bit of the extracted data 
+    
+    assign s_bit = data[15:0];
+    assign e_bit = data[7:0];
+
+    //always_comb
+	always @(*)
+        begin
+
+            Imm_out = {inst[31]? {20{1'b1}}:{20{1'b0}}, inst[31:20]};
+
+            if (inst[6:0] == 7'b0000011)     // Load instructions
+                begin
+                    if (inst[14:12] == 3'b000)              // LB
+                        y = {e_bit[7]? {24{1'b1}}:{24{1'b0}}, e_bit};
+                    else if (inst[14:12] == 3'b001)         // LH
+                        y = {s_bit[15]? {16{1'b1}}:{16{1'b0}}, s_bit};
+                    else if (inst[14:12] == 3'b100)         // LBU
+                        y = {24'b0, e_bit};
+                    else if (inst[14:12] == 3'b101)         // LHU
+                        y = {16'b0, s_bit};
+                    else if (inst[14:12] == 3'b010)         // LW
+                        y = data;
+                end
+
+            else if(inst[6:0] == 7'b0100011) // Store instructions
+                begin
+                    if (inst[14:12] == 3'b000)              // SB
+                        y = {e_bit[7]? {24{1'b1}}:{24{1'b0}}, e_bit};
+                    else if (inst[14:12] == 3'b001)         // SH
+                        y = {s_bit[15]? {16{1'b1}}:{16{1'b0}}, s_bit};
+                    else if (inst[14:12] == 3'b010)         // SW
+                        y = data;
+                end
+
+        end
+
+endmodule

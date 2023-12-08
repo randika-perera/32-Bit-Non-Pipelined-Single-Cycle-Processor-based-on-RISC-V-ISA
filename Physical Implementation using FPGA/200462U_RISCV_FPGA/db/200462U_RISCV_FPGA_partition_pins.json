@@ -1,0 +1,253 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "OUT_RF19",
+					"strict" : false
+				},
+				{
+					"name" : "OUT_RF21",
+					"strict" : false
+				},
+				{
+					"name" : "OUT_RF18_TENS[0]",
+					"strict" : false
+				},
+				{
+					"name" : "OUT_RF18_TENS[1]",
+					"strict" : false
+				},
+				{
+					"name" : "OUT_RF18_TENS[2]",
+					"strict" : false
+				},
+				{
+					"name" : "OUT_RF18_TENS[3]",
+					"strict" : false
+				},
+				{
+					"name" : "OUT_RF18_TENS[4]",
+					"strict" : false
+				},
+				{
+					"name" : "OUT_RF18_TENS[5]",
+					"strict" : false
+				},
+				{
+					"name" : "OUT_RF18_TENS[6]",
+					"strict" : false
+				},
+				{
+					"name" : "OUT_RF18_UNITS[0]",
+					"strict" : false
+				},
+				{
+					"name" : "OUT_RF18_UNITS[1]",
+					"strict" : false
+				},
+				{
+					"name" : "OUT_RF18_UNITS[2]",
+					"strict" : false
+				},
+				{
+					"name" : "OUT_RF18_UNITS[3]",
+					"strict" : false
+				},
+				{
+					"name" : "OUT_RF18_UNITS[4]",
+					"strict" : false
+				},
+				{
+					"name" : "OUT_RF18_UNITS[5]",
+					"strict" : false
+				},
+				{
+					"name" : "OUT_RF18_UNITS[6]",
+					"strict" : false
+				},
+				{
+					"name" : "OUT_RF20_TENS[0]",
+					"strict" : false
+				},
+				{
+					"name" : "OUT_RF20_TENS[1]",
+					"strict" : false
+				},
+				{
+					"name" : "OUT_RF20_TENS[2]",
+					"strict" : false
+				},
+				{
+					"name" : "OUT_RF20_TENS[3]",
+					"strict" : false
+				},
+				{
+					"name" : "OUT_RF20_TENS[4]",
+					"strict" : false
+				},
+				{
+					"name" : "OUT_RF20_TENS[5]",
+					"strict" : false
+				},
+				{
+					"name" : "OUT_RF20_TENS[6]",
+					"strict" : false
+				},
+				{
+					"name" : "OUT_RF20_UNITS[0]",
+					"strict" : false
+				},
+				{
+					"name" : "OUT_RF20_UNITS[1]",
+					"strict" : false
+				},
+				{
+					"name" : "OUT_RF20_UNITS[2]",
+					"strict" : false
+				},
+				{
+					"name" : "OUT_RF20_UNITS[3]",
+					"strict" : false
+				},
+				{
+					"name" : "OUT_RF20_UNITS[4]",
+					"strict" : false
+				},
+				{
+					"name" : "OUT_RF20_UNITS[5]",
+					"strict" : false
+				},
+				{
+					"name" : "OUT_RF20_UNITS[6]",
+					"strict" : false
+				},
+				{
+					"name" : "OUT_DM11_TENS[0]",
+					"strict" : false
+				},
+				{
+					"name" : "OUT_DM11_TENS[1]",
+					"strict" : false
+				},
+				{
+					"name" : "OUT_DM11_TENS[2]",
+					"strict" : false
+				},
+				{
+					"name" : "OUT_DM11_TENS[3]",
+					"strict" : false
+				},
+				{
+					"name" : "OUT_DM11_TENS[4]",
+					"strict" : false
+				},
+				{
+					"name" : "OUT_DM11_TENS[5]",
+					"strict" : false
+				},
+				{
+					"name" : "OUT_DM11_TENS[6]",
+					"strict" : false
+				},
+				{
+					"name" : "OUT_DM11_UNITS[0]",
+					"strict" : false
+				},
+				{
+					"name" : "OUT_DM11_UNITS[1]",
+					"strict" : false
+				},
+				{
+					"name" : "OUT_DM11_UNITS[2]",
+					"strict" : false
+				},
+				{
+					"name" : "OUT_DM11_UNITS[3]",
+					"strict" : false
+				},
+				{
+					"name" : "OUT_DM11_UNITS[4]",
+					"strict" : false
+				},
+				{
+					"name" : "OUT_DM11_UNITS[5]",
+					"strict" : false
+				},
+				{
+					"name" : "OUT_DM11_UNITS[6]",
+					"strict" : false
+				},
+				{
+					"name" : "OUT_DM12_TENS[0]",
+					"strict" : false
+				},
+				{
+					"name" : "OUT_DM12_TENS[1]",
+					"strict" : false
+				},
+				{
+					"name" : "OUT_DM12_TENS[2]",
+					"strict" : false
+				},
+				{
+					"name" : "OUT_DM12_TENS[3]",
+					"strict" : false
+				},
+				{
+					"name" : "OUT_DM12_TENS[4]",
+					"strict" : false
+				},
+				{
+					"name" : "OUT_DM12_TENS[5]",
+					"strict" : false
+				},
+				{
+					"name" : "OUT_DM12_TENS[6]",
+					"strict" : false
+				},
+				{
+					"name" : "OUT_DM12_UNITS[0]",
+					"strict" : false
+				},
+				{
+					"name" : "OUT_DM12_UNITS[1]",
+					"strict" : false
+				},
+				{
+					"name" : "OUT_DM12_UNITS[2]",
+					"strict" : false
+				},
+				{
+					"name" : "OUT_DM12_UNITS[3]",
+					"strict" : false
+				},
+				{
+					"name" : "OUT_DM12_UNITS[4]",
+					"strict" : false
+				},
+				{
+					"name" : "OUT_DM12_UNITS[5]",
+					"strict" : false
+				},
+				{
+					"name" : "OUT_DM12_UNITS[6]",
+					"strict" : false
+				},
+				{
+					"name" : "OUT_CLOCK",
+					"strict" : false
+				},
+				{
+					"name" : "reset",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

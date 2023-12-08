@@ -1,0 +1,605 @@
+Analysis & Elaboration report for RISCV_CPU
+Sat Oct 14 19:37:57 2023
+Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Elaboration Summary
+  3. Parallel Compilation
+  4. Parameter Settings for User Entity Instance: RISC_V:RISC_V
+  5. Parameter Settings for User Entity Instance: RISC_V:RISC_V|Datapath:dp
+  6. Parameter Settings for User Entity Instance: RISC_V:RISC_V|Datapath:dp|adder:pcadd1
+  7. Parameter Settings for User Entity Instance: RISC_V:RISC_V|Datapath:dp|adder_32:pcadd2
+  8. Parameter Settings for User Entity Instance: RISC_V:RISC_V|Datapath:dp|adder_32:pcadd3
+  9. Parameter Settings for User Entity Instance: RISC_V:RISC_V|Datapath:dp|mux2:next_pc1
+ 10. Parameter Settings for User Entity Instance: RISC_V:RISC_V|Datapath:dp|mux2:next_pc2
+ 11. Parameter Settings for User Entity Instance: RISC_V:RISC_V|Datapath:dp|flopr:pcreg
+ 12. Parameter Settings for User Entity Instance: RISC_V:RISC_V|Datapath:dp|instructionmemory:instr_mem
+ 13. Parameter Settings for User Entity Instance: RISC_V:RISC_V|Datapath:dp|data_extract:store_data_ex
+ 14. Parameter Settings for User Entity Instance: RISC_V:RISC_V|Datapath:dp|mux2:resmux_store
+ 15. Parameter Settings for User Entity Instance: RISC_V:RISC_V|Datapath:dp|RegFile:rf
+ 16. Parameter Settings for User Entity Instance: RISC_V:RISC_V|Datapath:dp|data_extract:load_data_ex
+ 17. Parameter Settings for User Entity Instance: RISC_V:RISC_V|Datapath:dp|mux2:resmux
+ 18. Parameter Settings for User Entity Instance: RISC_V:RISC_V|Datapath:dp|mux2:resmux_jal
+ 19. Parameter Settings for User Entity Instance: RISC_V:RISC_V|Datapath:dp|mux2:resmux_auipc
+ 20. Parameter Settings for User Entity Instance: RISC_V:RISC_V|Datapath:dp|mux2:srcbmux
+ 21. Parameter Settings for User Entity Instance: RISC_V:RISC_V|Datapath:dp|alu:alu_module
+ 22. Parameter Settings for User Entity Instance: RISC_V:RISC_V|Datapath:dp|mux2:resmux_lui
+ 23. Parameter Settings for User Entity Instance: RISC_V:RISC_V|Datapath:dp|datamemory:data_mem
+ 24. Analysis & Elaboration Settings
+ 25. Port Connectivity Checks: "RISC_V:RISC_V|Datapath:dp|mux2:resmux_jal"
+ 26. Port Connectivity Checks: "RISC_V:RISC_V|Datapath:dp|adder_32:pcadd3"
+ 27. Port Connectivity Checks: "RISC_V:RISC_V|Datapath:dp|adder_32:pcadd2"
+ 28. Port Connectivity Checks: "RISC_V:RISC_V|Datapath:dp|adder:pcadd1"
+ 29. Port Connectivity Checks: "RISC_V:RISC_V"
+ 30. Analysis & Elaboration Messages
+ 31. Analysis & Elaboration Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2017  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+
+
+
++----------------------------------------------------------------------------------+
+; Analysis & Elaboration Summary                                                   ;
++------------------------------------+---------------------------------------------+
+; Analysis & Elaboration Status      ; Successful - Sat Oct 14 19:37:57 2023       ;
+; Quartus Prime Version              ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
+; Revision Name                      ; RISCV_CPU                                   ;
+; Top-level Entity Name              ; tb_top                                      ;
+; Family                             ; Cyclone IV E                                ;
+; Total logic elements               ; N/A until Partition Merge                   ;
+;     Total combinational functions  ; N/A until Partition Merge                   ;
+;     Dedicated logic registers      ; N/A until Partition Merge                   ;
+; Total registers                    ; N/A until Partition Merge                   ;
+; Total pins                         ; N/A until Partition Merge                   ;
+; Total virtual pins                 ; N/A until Partition Merge                   ;
+; Total memory bits                  ; N/A until Partition Merge                   ;
+; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                   ;
+; Total PLLs                         ; N/A until Partition Merge                   ;
++------------------------------------+---------------------------------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
++----------------------------+-------------+
+
+
++------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: RISC_V:RISC_V ;
++----------------+-------+-----------------------------------+
+; Parameter Name ; Value ; Type                              ;
++----------------+-------+-----------------------------------+
+; DATA_W         ; 32    ; Signed Integer                    ;
++----------------+-------+-----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: RISC_V:RISC_V|Datapath:dp ;
++----------------+-------+-----------------------------------------------+
+; Parameter Name ; Value ; Type                                          ;
++----------------+-------+-----------------------------------------------+
+; PC_W           ; 9     ; Signed Integer                                ;
+; INS_W          ; 32    ; Signed Integer                                ;
+; RF_ADDRESS     ; 5     ; Signed Integer                                ;
+; DATA_W         ; 32    ; Signed Integer                                ;
+; DM_ADDRESS     ; 9     ; Signed Integer                                ;
+; ALU_CC_W       ; 4     ; Signed Integer                                ;
++----------------+-------+-----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: RISC_V:RISC_V|Datapath:dp|adder:pcadd1 ;
++----------------+-------+------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                       ;
++----------------+-------+------------------------------------------------------------+
+; WIDTH          ; 9     ; Signed Integer                                             ;
++----------------+-------+------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: RISC_V:RISC_V|Datapath:dp|adder_32:pcadd2 ;
++----------------+-------+---------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                          ;
++----------------+-------+---------------------------------------------------------------+
+; WIDTH          ; 32    ; Signed Integer                                                ;
++----------------+-------+---------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: RISC_V:RISC_V|Datapath:dp|adder_32:pcadd3 ;
++----------------+-------+---------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                          ;
++----------------+-------+---------------------------------------------------------------+
+; WIDTH          ; 32    ; Signed Integer                                                ;
++----------------+-------+---------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: RISC_V:RISC_V|Datapath:dp|mux2:next_pc1 ;
++----------------+-------+-------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                        ;
++----------------+-------+-------------------------------------------------------------+
+; WIDTH          ; 9     ; Signed Integer                                              ;
++----------------+-------+-------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: RISC_V:RISC_V|Datapath:dp|mux2:next_pc2 ;
++----------------+-------+-------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                        ;
++----------------+-------+-------------------------------------------------------------+
+; WIDTH          ; 9     ; Signed Integer                                              ;
++----------------+-------+-------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: RISC_V:RISC_V|Datapath:dp|flopr:pcreg ;
++----------------+-------+-----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                      ;
++----------------+-------+-----------------------------------------------------------+
+; WIDTH          ; 9     ; Signed Integer                                            ;
++----------------+-------+-----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: RISC_V:RISC_V|Datapath:dp|instructionmemory:instr_mem ;
++----------------+-------+---------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                      ;
++----------------+-------+---------------------------------------------------------------------------+
+; INS_ADDRESS    ; 9     ; Signed Integer                                                            ;
+; INS_W          ; 32    ; Signed Integer                                                            ;
++----------------+-------+---------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: RISC_V:RISC_V|Datapath:dp|data_extract:store_data_ex ;
++----------------+-------+--------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                     ;
++----------------+-------+--------------------------------------------------------------------------+
+; WIDTH          ; 32    ; Signed Integer                                                           ;
++----------------+-------+--------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: RISC_V:RISC_V|Datapath:dp|mux2:resmux_store ;
++----------------+-------+-----------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                            ;
++----------------+-------+-----------------------------------------------------------------+
+; WIDTH          ; 32    ; Signed Integer                                                  ;
++----------------+-------+-----------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: RISC_V:RISC_V|Datapath:dp|RegFile:rf ;
++----------------+-------+----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                     ;
++----------------+-------+----------------------------------------------------------+
+; DATA_WIDTH     ; 32    ; Signed Integer                                           ;
+; ADDRESS_WIDTH  ; 5     ; Signed Integer                                           ;
+; NUM_REGS       ; 32    ; Signed Integer                                           ;
++----------------+-------+----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: RISC_V:RISC_V|Datapath:dp|data_extract:load_data_ex ;
++----------------+-------+-------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                    ;
++----------------+-------+-------------------------------------------------------------------------+
+; WIDTH          ; 32    ; Signed Integer                                                          ;
++----------------+-------+-------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: RISC_V:RISC_V|Datapath:dp|mux2:resmux ;
++----------------+-------+-----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                      ;
++----------------+-------+-----------------------------------------------------------+
+; WIDTH          ; 32    ; Signed Integer                                            ;
++----------------+-------+-----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: RISC_V:RISC_V|Datapath:dp|mux2:resmux_jal ;
++----------------+-------+---------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                          ;
++----------------+-------+---------------------------------------------------------------+
+; WIDTH          ; 32    ; Signed Integer                                                ;
++----------------+-------+---------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: RISC_V:RISC_V|Datapath:dp|mux2:resmux_auipc ;
++----------------+-------+-----------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                            ;
++----------------+-------+-----------------------------------------------------------------+
+; WIDTH          ; 32    ; Signed Integer                                                  ;
++----------------+-------+-----------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: RISC_V:RISC_V|Datapath:dp|mux2:srcbmux ;
++----------------+-------+------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                       ;
++----------------+-------+------------------------------------------------------------+
+; WIDTH          ; 32    ; Signed Integer                                             ;
++----------------+-------+------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: RISC_V:RISC_V|Datapath:dp|alu:alu_module ;
++----------------+-------+--------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                         ;
++----------------+-------+--------------------------------------------------------------+
+; DATA_WIDTH     ; 32    ; Signed Integer                                               ;
+; OPCODE_LENGTH  ; 4     ; Signed Integer                                               ;
++----------------+-------+--------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: RISC_V:RISC_V|Datapath:dp|mux2:resmux_lui ;
++----------------+-------+---------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                          ;
++----------------+-------+---------------------------------------------------------------+
+; WIDTH          ; 32    ; Signed Integer                                                ;
++----------------+-------+---------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: RISC_V:RISC_V|Datapath:dp|datamemory:data_mem ;
++----------------+-------+-------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                              ;
++----------------+-------+-------------------------------------------------------------------+
+; DM_ADDRESS     ; 9     ; Signed Integer                                                    ;
+; DATA_W         ; 32    ; Signed Integer                                                    ;
++----------------+-------+-------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Analysis & Elaboration Settings                                                                                      ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                     ; Setting            ; Default Value      ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Top-level entity name                                                      ; tb_top             ; RISCV_CPU          ;
+; Family name                                                                ; Cyclone IV E       ; Cyclone V          ;
+; Use smart compilation                                                      ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                                ; Off                ; Off                ;
+; Restructure Multiplexers                                                   ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                ;
+; Preserve fewer node names                                                  ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                              ; Enable             ; Enable             ;
+; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                   ; Auto               ; Auto               ;
+; Safe State Machine                                                         ; Off                ; Off                ;
+; Extract Verilog State Machines                                             ; On                 ; On                 ;
+; Extract VHDL State Machines                                                ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                          ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                 ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                             ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                  ; On                 ; On                 ;
+; Parallel Synthesis                                                         ; On                 ; On                 ;
+; DSP Block Balancing                                                        ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                         ; On                 ; On                 ;
+; Power-Up Don't Care                                                        ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                               ; Off                ; Off                ;
+; Remove Duplicate Registers                                                 ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                       ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                     ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                      ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                       ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                        ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                ; Off                ;
+; Optimization Technique                                                     ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                         ; 70                 ; 70                 ;
+; Auto Carry Chains                                                          ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                       ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                ; Off                ;
+; Auto ROM Replacement                                                       ; On                 ; On                 ;
+; Auto RAM Replacement                                                       ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                 ; On                 ; On                 ;
+; Auto Shift Register Replacement                                            ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                            ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                              ; On                 ; On                 ;
+; Strict RAM Replacement                                                     ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                          ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                     ; Off                ; Off                ;
+; Auto RAM Block Balancing                                                   ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                      ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                              ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                    ; On                 ; On                 ;
+; Report Parameter Settings                                                  ; On                 ; On                 ;
+; Report Source Assignments                                                  ; On                 ; On                 ;
+; Report Connectivity Checks                                                 ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
+; Synchronization Register Chain Length                                      ; 2                  ; 2                  ;
+; Power Optimization During Synthesis                                        ; Normal compilation ; Normal compilation ;
+; HDL message level                                                          ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                         ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                ; 100                ;
+; Clock MUX Protection                                                       ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                ; Off                ; Off                ;
+; Block Design Naming                                                        ; Auto               ; Auto               ;
+; SDC constraint protection                                                  ; Off                ; Off                ;
+; Synthesis Effort                                                           ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                       ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                         ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                     ; On                 ; On                 ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+
+
++-----------------------------------------------------------------------+
+; Port Connectivity Checks: "RISC_V:RISC_V|Datapath:dp|mux2:resmux_jal" ;
++-----------+-------+----------+----------------------------------------+
+; Port      ; Type  ; Severity ; Details                                ;
++-----------+-------+----------+----------------------------------------+
+; d1[31..9] ; Input ; Info     ; Stuck at GND                           ;
++-----------+-------+----------+----------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "RISC_V:RISC_V|Datapath:dp|adder_32:pcadd3"                                              ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                             ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; y[31..9] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------+
+; Port Connectivity Checks: "RISC_V:RISC_V|Datapath:dp|adder_32:pcadd2" ;
++----------+-------+----------+-----------------------------------------+
+; Port     ; Type  ; Severity ; Details                                 ;
++----------+-------+----------+-----------------------------------------+
+; a[31..9] ; Input ; Info     ; Stuck at GND                            ;
++----------+-------+----------+-----------------------------------------+
+
+
++--------------------------------------------------------------------+
+; Port Connectivity Checks: "RISC_V:RISC_V|Datapath:dp|adder:pcadd1" ;
++---------+-------+----------+---------------------------------------+
+; Port    ; Type  ; Severity ; Details                               ;
++---------+-------+----------+---------------------------------------+
+; b[8..3] ; Input ; Info     ; Stuck at GND                          ;
+; b[1..0] ; Input ; Info     ; Stuck at GND                          ;
+; b[2]    ; Input ; Info     ; Stuck at VCC                          ;
++---------+-------+----------+---------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "RISC_V:RISC_V"                                                                         ;
++---------+--------+----------+-------------------------------------------------------------------------------------+
+; Port    ; Type   ; Severity ; Details                                                                             ;
++---------+--------+----------+-------------------------------------------------------------------------------------+
+; WB_Data ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++---------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++---------------------------------+
+; Analysis & Elaboration Messages ;
++---------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Elaboration
+    Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
+    Info: Processing started: Sat Oct 14 19:37:50 2023
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off RISCV_CPU -c RISCV_CPU --analysis_and_elaboration
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file design_files/controller.sv
+    Info (12023): Found entity 1: Controller File: C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/Controller.sv Line: 55
+Info (12021): Found 1 design units, including 1 entities, in source file verif/tb_top.sv
+    Info (12023): Found entity 1: tb_top File: C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/verif/tb_top.sv Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file design_files/risc_v.sv
+    Info (12023): Found entity 1: RISC_V File: C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/RISC_V.sv Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file design_files/regfile.sv
+    Info (12023): Found entity 1: RegFile File: C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/RegFile.sv Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file design_files/mux2.sv
+    Info (12023): Found entity 1: mux2 File: C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/mux2.sv Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file design_files/instructionmemory.sv
+    Info (12023): Found entity 1: instructionmemory File: C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/instructionmemory.sv Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file design_files/imm_gen.sv
+    Info (12023): Found entity 1: imm_Gen File: C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/imm_Gen.sv Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file design_files/flopr.sv
+    Info (12023): Found entity 1: flopr File: C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/flopr.sv Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file design_files/datapath.sv
+    Info (12023): Found entity 1: Datapath File: C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/Datapath.sv Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file design_files/datamemory.sv
+    Info (12023): Found entity 1: datamemory File: C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/datamemory.sv Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file design_files/data_extract.sv
+    Info (12023): Found entity 1: data_extract File: C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/data_extract.sv Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file design_files/alucontroller.sv
+    Info (12023): Found entity 1: ALUController File: C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/ALUController.sv Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file design_files/alu.sv
+    Info (12023): Found entity 1: alu File: C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/alu.sv Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file design_files/adder_32.sv
+    Info (12023): Found entity 1: adder_32 File: C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/adder_32.sv Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file design_files/adder.sv
+    Info (12023): Found entity 1: adder File: C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/adder.sv Line: 3
+Info (12127): Elaborating entity "tb_top" for the top level hierarchy
+Warning (10755): Verilog HDL warning at tb_top.sv(8): assignments to tb_clk create a combinational loop File: C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/verif/tb_top.sv Line: 8
+Warning (10175): Verilog HDL warning at tb_top.sv(27): ignoring unsupported system task File: C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/verif/tb_top.sv Line: 27
+Info (12128): Elaborating entity "RISC_V" for hierarchy "RISC_V:RISC_V" File: C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/verif/tb_top.sv Line: 22
+Info (12128): Elaborating entity "Controller" for hierarchy "RISC_V:RISC_V|Controller:c" File: C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/RISC_V.sv Line: 20
+Warning (10027): Verilog HDL or VHDL warning at the Controller.sv(101): index expression is not wide enough to address all of the elements in the array File: C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/Controller.sv Line: 101
+Warning (10027): Verilog HDL or VHDL warning at the Controller.sv(102): index expression is not wide enough to address all of the elements in the array File: C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/Controller.sv Line: 102
+Warning (10027): Verilog HDL or VHDL warning at the Controller.sv(103): index expression is not wide enough to address all of the elements in the array File: C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/Controller.sv Line: 103
+Warning (10027): Verilog HDL or VHDL warning at the Controller.sv(104): index expression is not wide enough to address all of the elements in the array File: C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/Controller.sv Line: 104
+Warning (10027): Verilog HDL or VHDL warning at the Controller.sv(105): index expression is not wide enough to address all of the elements in the array File: C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/Controller.sv Line: 105
+Warning (10027): Verilog HDL or VHDL warning at the Controller.sv(106): index expression is not wide enough to address all of the elements in the array File: C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/Controller.sv Line: 106
+Warning (10027): Verilog HDL or VHDL warning at the Controller.sv(107): index expression is not wide enough to address all of the elements in the array File: C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/Controller.sv Line: 107
+Warning (10027): Verilog HDL or VHDL warning at the Controller.sv(108): index expression is not wide enough to address all of the elements in the array File: C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/Controller.sv Line: 108
+Warning (10027): Verilog HDL or VHDL warning at the Controller.sv(109): index expression is not wide enough to address all of the elements in the array File: C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/Controller.sv Line: 109
+Warning (10027): Verilog HDL or VHDL warning at the Controller.sv(110): index expression is not wide enough to address all of the elements in the array File: C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/Controller.sv Line: 110
+Warning (10027): Verilog HDL or VHDL warning at the Controller.sv(111): index expression is not wide enough to address all of the elements in the array File: C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/Controller.sv Line: 111
+Warning (10027): Verilog HDL or VHDL warning at the Controller.sv(112): index expression is not wide enough to address all of the elements in the array File: C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/Controller.sv Line: 112
+Warning (10027): Verilog HDL or VHDL warning at the Controller.sv(113): index expression is not wide enough to address all of the elements in the array File: C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/Controller.sv Line: 113
+Warning (10027): Verilog HDL or VHDL warning at the Controller.sv(114): index expression is not wide enough to address all of the elements in the array File: C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/Controller.sv Line: 114
+Warning (10030): Net "rom_data[0..2]" at Controller.sv(72) has no driver or initial value, using a default initial value '0' File: C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/Controller.sv Line: 72
+Warning (10030): Net "rom_data[4..18]" at Controller.sv(72) has no driver or initial value, using a default initial value '0' File: C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/Controller.sv Line: 72
+Warning (10030): Net "rom_data[20..22]" at Controller.sv(72) has no driver or initial value, using a default initial value '0' File: C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/Controller.sv Line: 72
+Warning (10030): Net "rom_data[24..34]" at Controller.sv(72) has no driver or initial value, using a default initial value '0' File: C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/Controller.sv Line: 72
+Warning (10030): Net "rom_data[36..50]" at Controller.sv(72) has no driver or initial value, using a default initial value '0' File: C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/Controller.sv Line: 72
+Warning (10030): Net "rom_data[52..54]" at Controller.sv(72) has no driver or initial value, using a default initial value '0' File: C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/Controller.sv Line: 72
+Warning (10030): Net "rom_data[56..98]" at Controller.sv(72) has no driver or initial value, using a default initial value '0' File: C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/Controller.sv Line: 72
+Warning (10030): Net "rom_data[100..102]" at Controller.sv(72) has no driver or initial value, using a default initial value '0' File: C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/Controller.sv Line: 72
+Warning (10030): Net "rom_data[104..110]" at Controller.sv(72) has no driver or initial value, using a default initial value '0' File: C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/Controller.sv Line: 72
+Warning (10030): Net "rom_data[112..127]" at Controller.sv(72) has no driver or initial value, using a default initial value '0' File: C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/Controller.sv Line: 72
+Info (12128): Elaborating entity "ALUController" for hierarchy "RISC_V:RISC_V|ALUController:ac" File: C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/RISC_V.sv Line: 22
+Info (12128): Elaborating entity "Datapath" for hierarchy "RISC_V:RISC_V|Datapath:dp" File: C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/RISC_V.sv Line: 24
+Info (12128): Elaborating entity "adder" for hierarchy "RISC_V:RISC_V|Datapath:dp|adder:pcadd1" File: C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/Datapath.sv Line: 69
+Info (12128): Elaborating entity "adder_32" for hierarchy "RISC_V:RISC_V|Datapath:dp|adder_32:pcadd2" File: C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/Datapath.sv Line: 72
+Info (12128): Elaborating entity "mux2" for hierarchy "RISC_V:RISC_V|Datapath:dp|mux2:next_pc1" File: C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/Datapath.sv Line: 78
+Info (12128): Elaborating entity "flopr" for hierarchy "RISC_V:RISC_V|Datapath:dp|flopr:pcreg" File: C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/Datapath.sv Line: 84
+Info (12128): Elaborating entity "instructionmemory" for hierarchy "RISC_V:RISC_V|Datapath:dp|instructionmemory:instr_mem" File: C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/Datapath.sv Line: 87
+Warning (10030): Net "Inst_mem[127..12]" at instructionmemory.sv(12) has no driver or initial value, using a default initial value '0' File: C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/instructionmemory.sv Line: 12
+Info (12128): Elaborating entity "data_extract" for hierarchy "RISC_V:RISC_V|Datapath:dp|data_extract:store_data_ex" File: C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/Datapath.sv Line: 90
+Warning (10036): Verilog HDL or VHDL warning at data_extract.sv(12): object "Imm_out" assigned a value but never read File: C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/data_extract.sv Line: 12
+Warning (10240): Verilog HDL Always Construct warning at data_extract.sv(23): inferring latch(es) for variable "y", which holds its previous value in one or more paths through the always construct File: C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/data_extract.sv Line: 23
+Info (10041): Inferred latch for "y[0]" at data_extract.sv(39) File: C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/data_extract.sv Line: 39
+Info (10041): Inferred latch for "y[1]" at data_extract.sv(39) File: C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/data_extract.sv Line: 39
+Info (10041): Inferred latch for "y[2]" at data_extract.sv(39) File: C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/data_extract.sv Line: 39
+Info (10041): Inferred latch for "y[3]" at data_extract.sv(39) File: C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/data_extract.sv Line: 39
+Info (10041): Inferred latch for "y[4]" at data_extract.sv(39) File: C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/data_extract.sv Line: 39
+Info (10041): Inferred latch for "y[5]" at data_extract.sv(39) File: C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/data_extract.sv Line: 39
+Info (10041): Inferred latch for "y[6]" at data_extract.sv(39) File: C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/data_extract.sv Line: 39
+Info (10041): Inferred latch for "y[7]" at data_extract.sv(39) File: C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/data_extract.sv Line: 39
+Info (10041): Inferred latch for "y[8]" at data_extract.sv(39) File: C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/data_extract.sv Line: 39
+Info (10041): Inferred latch for "y[9]" at data_extract.sv(39) File: C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/data_extract.sv Line: 39
+Info (10041): Inferred latch for "y[10]" at data_extract.sv(39) File: C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/data_extract.sv Line: 39
+Info (10041): Inferred latch for "y[11]" at data_extract.sv(39) File: C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/data_extract.sv Line: 39
+Info (10041): Inferred latch for "y[12]" at data_extract.sv(39) File: C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/data_extract.sv Line: 39
+Info (10041): Inferred latch for "y[13]" at data_extract.sv(39) File: C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/data_extract.sv Line: 39
+Info (10041): Inferred latch for "y[14]" at data_extract.sv(39) File: C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/data_extract.sv Line: 39
+Info (10041): Inferred latch for "y[15]" at data_extract.sv(39) File: C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/data_extract.sv Line: 39
+Info (10041): Inferred latch for "y[16]" at data_extract.sv(39) File: C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/data_extract.sv Line: 39
+Info (10041): Inferred latch for "y[17]" at data_extract.sv(39) File: C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/data_extract.sv Line: 39
+Info (10041): Inferred latch for "y[18]" at data_extract.sv(39) File: C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/data_extract.sv Line: 39
+Info (10041): Inferred latch for "y[19]" at data_extract.sv(39) File: C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/data_extract.sv Line: 39
+Info (10041): Inferred latch for "y[20]" at data_extract.sv(39) File: C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/data_extract.sv Line: 39
+Info (10041): Inferred latch for "y[21]" at data_extract.sv(39) File: C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/data_extract.sv Line: 39
+Info (10041): Inferred latch for "y[22]" at data_extract.sv(39) File: C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/data_extract.sv Line: 39
+Info (10041): Inferred latch for "y[23]" at data_extract.sv(39) File: C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/data_extract.sv Line: 39
+Info (10041): Inferred latch for "y[24]" at data_extract.sv(39) File: C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/data_extract.sv Line: 39
+Info (10041): Inferred latch for "y[25]" at data_extract.sv(39) File: C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/data_extract.sv Line: 39
+Info (10041): Inferred latch for "y[26]" at data_extract.sv(39) File: C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/data_extract.sv Line: 39
+Info (10041): Inferred latch for "y[27]" at data_extract.sv(39) File: C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/data_extract.sv Line: 39
+Info (10041): Inferred latch for "y[28]" at data_extract.sv(39) File: C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/data_extract.sv Line: 39
+Info (10041): Inferred latch for "y[29]" at data_extract.sv(39) File: C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/data_extract.sv Line: 39
+Info (10041): Inferred latch for "y[30]" at data_extract.sv(39) File: C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/data_extract.sv Line: 39
+Info (10041): Inferred latch for "y[31]" at data_extract.sv(39) File: C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/data_extract.sv Line: 39
+Info (12128): Elaborating entity "mux2" for hierarchy "RISC_V:RISC_V|Datapath:dp|mux2:resmux_store" File: C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/Datapath.sv Line: 93
+Info (12128): Elaborating entity "RegFile" for hierarchy "RISC_V:RISC_V|Datapath:dp|RegFile:rf" File: C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/Datapath.sv Line: 105
+Info (12128): Elaborating entity "imm_Gen" for hierarchy "RISC_V:RISC_V|Datapath:dp|imm_Gen:Ext_Imm" File: C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/Datapath.sv Line: 120
+Info (12128): Elaborating entity "alu" for hierarchy "RISC_V:RISC_V|Datapath:dp|alu:alu_module" File: C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/Datapath.sv Line: 133
+Info (12128): Elaborating entity "datamemory" for hierarchy "RISC_V:RISC_V|Datapath:dp|datamemory:data_mem" File: C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/Datapath.sv Line: 147
+Warning (10240): Verilog HDL Always Construct warning at datamemory.sv(46): inferring latch(es) for variable "rd", which holds its previous value in one or more paths through the always construct File: C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/datamemory.sv Line: 46
+Info (10041): Inferred latch for "rd[0]" at datamemory.sv(46) File: C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/datamemory.sv Line: 46
+Info (10041): Inferred latch for "rd[1]" at datamemory.sv(46) File: C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/datamemory.sv Line: 46
+Info (10041): Inferred latch for "rd[2]" at datamemory.sv(46) File: C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/datamemory.sv Line: 46
+Info (10041): Inferred latch for "rd[3]" at datamemory.sv(46) File: C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/datamemory.sv Line: 46
+Info (10041): Inferred latch for "rd[4]" at datamemory.sv(46) File: C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/datamemory.sv Line: 46
+Info (10041): Inferred latch for "rd[5]" at datamemory.sv(46) File: C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/datamemory.sv Line: 46
+Info (10041): Inferred latch for "rd[6]" at datamemory.sv(46) File: C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/datamemory.sv Line: 46
+Info (10041): Inferred latch for "rd[7]" at datamemory.sv(46) File: C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/datamemory.sv Line: 46
+Info (10041): Inferred latch for "rd[8]" at datamemory.sv(46) File: C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/datamemory.sv Line: 46
+Info (10041): Inferred latch for "rd[9]" at datamemory.sv(46) File: C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/datamemory.sv Line: 46
+Info (10041): Inferred latch for "rd[10]" at datamemory.sv(46) File: C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/datamemory.sv Line: 46
+Info (10041): Inferred latch for "rd[11]" at datamemory.sv(46) File: C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/datamemory.sv Line: 46
+Info (10041): Inferred latch for "rd[12]" at datamemory.sv(46) File: C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/datamemory.sv Line: 46
+Info (10041): Inferred latch for "rd[13]" at datamemory.sv(46) File: C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/datamemory.sv Line: 46
+Info (10041): Inferred latch for "rd[14]" at datamemory.sv(46) File: C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/datamemory.sv Line: 46
+Info (10041): Inferred latch for "rd[15]" at datamemory.sv(46) File: C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/datamemory.sv Line: 46
+Info (10041): Inferred latch for "rd[16]" at datamemory.sv(46) File: C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/datamemory.sv Line: 46
+Info (10041): Inferred latch for "rd[17]" at datamemory.sv(46) File: C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/datamemory.sv Line: 46
+Info (10041): Inferred latch for "rd[18]" at datamemory.sv(46) File: C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/datamemory.sv Line: 46
+Info (10041): Inferred latch for "rd[19]" at datamemory.sv(46) File: C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/datamemory.sv Line: 46
+Info (10041): Inferred latch for "rd[20]" at datamemory.sv(46) File: C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/datamemory.sv Line: 46
+Info (10041): Inferred latch for "rd[21]" at datamemory.sv(46) File: C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/datamemory.sv Line: 46
+Info (10041): Inferred latch for "rd[22]" at datamemory.sv(46) File: C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/datamemory.sv Line: 46
+Info (10041): Inferred latch for "rd[23]" at datamemory.sv(46) File: C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/datamemory.sv Line: 46
+Info (10041): Inferred latch for "rd[24]" at datamemory.sv(46) File: C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/datamemory.sv Line: 46
+Info (10041): Inferred latch for "rd[25]" at datamemory.sv(46) File: C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/datamemory.sv Line: 46
+Info (10041): Inferred latch for "rd[26]" at datamemory.sv(46) File: C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/datamemory.sv Line: 46
+Info (10041): Inferred latch for "rd[27]" at datamemory.sv(46) File: C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/datamemory.sv Line: 46
+Info (10041): Inferred latch for "rd[28]" at datamemory.sv(46) File: C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/datamemory.sv Line: 46
+Info (10041): Inferred latch for "rd[29]" at datamemory.sv(46) File: C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/datamemory.sv Line: 46
+Info (10041): Inferred latch for "rd[30]" at datamemory.sv(46) File: C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/datamemory.sv Line: 46
+Info (10041): Inferred latch for "rd[31]" at datamemory.sv(46) File: C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/datamemory.sv Line: 46
+Warning (12011): Net is missing source, defaulting to GND
+    Warning (12110): Net "tb_clk" is missing source, defaulting to GND File: C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/verif/tb_top.sv Line: 5
+Info (144001): Generated suppressed messages file C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/output_files/RISCV_CPU.map.smsg
+Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 33 warnings
+    Info: Peak virtual memory: 4716 megabytes
+    Info: Processing ended: Sat Oct 14 19:37:57 2023
+    Info: Elapsed time: 00:00:07
+    Info: Total CPU time (on all processors): 00:00:06
+
+
++--------------------------------------------+
+; Analysis & Elaboration Suppressed Messages ;
++--------------------------------------------+
+The suppressed messages can be found in C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/output_files/RISCV_CPU.map.smsg.
+
+

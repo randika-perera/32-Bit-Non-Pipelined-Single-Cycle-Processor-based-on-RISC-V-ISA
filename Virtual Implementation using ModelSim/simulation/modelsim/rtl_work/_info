@@ -1,0 +1,391 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/simulation/modelsim
+vadder
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z2 !s110 1697292482
+!i10b 1
+!s100 PB0`lTz5@Km3a0MbFY?EA2
+IJ_b;F`H[6Q[@T6;ge?Vj01
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+!s105 adder_sv_unit
+S1
+R0
+w1696764601
+8C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/adder.sv
+FC:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/adder.sv
+L0 3
+Z4 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z5 !s108 1697292482.000000
+!s107 C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/adder.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files|C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/adder.sv|
+!i113 1
+Z6 o-sv -work work
+Z7 !s92 -sv -work work +incdir+C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files
+Z8 tCvgOpt 0
+vadder_32
+R1
+R2
+!i10b 1
+!s100 L9WTK0CP9>BEh6ZJ^mO<H3
+IL<=NKXkaKB=PRbV`MSg]B1
+R3
+!s105 adder_32_sv_unit
+S1
+R0
+w1696764566
+8C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/adder_32.sv
+FC:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/adder_32.sv
+L0 3
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/adder_32.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files|C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/adder_32.sv|
+!i113 1
+R6
+R7
+R8
+valu
+R1
+R2
+!i10b 1
+!s100 8Ia]8QU?hBY_7H2gg[RmF0
+II7VASSjofkNRg9G;d7XUU0
+R3
+!s105 alu_sv_unit
+S1
+R0
+w1696911022
+8C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/alu.sv
+FC:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/alu.sv
+L0 3
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/alu.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files|C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/alu.sv|
+!i113 1
+R6
+R7
+R8
+vALUController
+R1
+R2
+!i10b 1
+!s100 NAh8faN?4G@b2U2^=HZPG2
+IVc5BHm9j35nNac7>FBAcY2
+R3
+!s105 ALUController_sv_unit
+S1
+R0
+w1696939519
+8C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/ALUController.sv
+FC:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/ALUController.sv
+L0 3
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/ALUController.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files|C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/ALUController.sv|
+!i113 1
+R6
+R7
+R8
+n@a@l@u@controller
+vController
+R1
+R2
+!i10b 1
+!s100 ]kf;d6NZTeAnF^ljK9gAT3
+I^gJ;2E2Y0R5fPkSQO5i813
+R3
+!s105 Controller_sv_unit
+S1
+R0
+w1697277048
+8C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/Controller.sv
+FC:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/Controller.sv
+L0 55
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/Controller.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files|C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/Controller.sv|
+!i113 1
+R6
+R7
+R8
+n@controller
+vdata_extract
+R1
+R2
+!i10b 1
+!s100 o[8EDkF]JTzSz4;BD<0G^1
+ImHKMMz`i9g5WG^G<j`l;[0
+R3
+!s105 data_extract_sv_unit
+S1
+R0
+w1696957405
+8C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/data_extract.sv
+FC:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/data_extract.sv
+L0 3
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/data_extract.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files|C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/data_extract.sv|
+!i113 1
+R6
+R7
+R8
+vdatamemory
+R1
+R2
+!i10b 1
+!s100 @FGLD]<1aLWfdY<SNhllc1
+IETLfGCQLNnW=9RRZ[nz@h1
+R3
+!s105 datamemory_sv_unit
+S1
+R0
+w1697194064
+8C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/datamemory.sv
+FC:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/datamemory.sv
+L0 3
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/datamemory.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files|C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/datamemory.sv|
+!i113 1
+R6
+R7
+R8
+vDatapath
+R1
+R2
+!i10b 1
+!s100 K9;hdH3=91CEXjJ3Y0KK63
+IV`hSF?OR6b4X`PXgn]dd^0
+R3
+!s105 Datapath_sv_unit
+S1
+R0
+w1696960261
+8C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/Datapath.sv
+FC:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/Datapath.sv
+L0 3
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/Datapath.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files|C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/Datapath.sv|
+!i113 1
+R6
+R7
+R8
+n@datapath
+vflopr
+R1
+R2
+!i10b 1
+!s100 >^VF5EI7[P:[PWWAUXLCj1
+INJT6W>:=gj0S@>:?;I1T=0
+R3
+!s105 flopr_sv_unit
+S1
+R0
+w1696765177
+8C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/flopr.sv
+FC:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/flopr.sv
+L0 3
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/flopr.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files|C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/flopr.sv|
+!i113 1
+R6
+R7
+R8
+vimm_Gen
+R1
+R2
+!i10b 1
+!s100 cMYbGBzU2flKWJM:LOS<K1
+IdR7L86lUkRUEW3[d;e`mz3
+R3
+!s105 imm_Gen_sv_unit
+S1
+R0
+w1696938316
+8C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/imm_Gen.sv
+FC:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/imm_Gen.sv
+L0 3
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/imm_Gen.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files|C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/imm_Gen.sv|
+!i113 1
+R6
+R7
+R8
+nimm_@gen
+vinstructionmemory
+R1
+R2
+!i10b 1
+!s100 oYR1;_b<VKijboB>Li3>A1
+IdFnZQcoa:zKl32?^iij4F0
+R3
+!s105 instructionmemory_sv_unit
+S1
+R0
+w1697292469
+8C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/instructionmemory.sv
+FC:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/instructionmemory.sv
+L0 3
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/instructionmemory.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files|C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/instructionmemory.sv|
+!i113 1
+R6
+R7
+R8
+vmux2
+R1
+R2
+!i10b 1
+!s100 P`gk55dzeZNMG[QGKj;@63
+I0j;0]0b7h_AXH:W^O@<@V2
+R3
+!s105 mux2_sv_unit
+S1
+R0
+w1696742486
+8C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/mux2.sv
+FC:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/mux2.sv
+L0 3
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/mux2.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files|C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/mux2.sv|
+!i113 1
+R6
+R7
+R8
+vRegFile
+R1
+R2
+!i10b 1
+!s100 c7Q:I:nEEY6FZSSaU3lMD3
+Ia;C^nXI:_WaEL88_oz;NM3
+R3
+!s105 RegFile_sv_unit
+S1
+R0
+w1696960105
+8C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/RegFile.sv
+FC:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/RegFile.sv
+L0 3
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/RegFile.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files|C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/RegFile.sv|
+!i113 1
+R6
+R7
+R8
+n@reg@file
+vRISC_V
+R1
+R2
+!i10b 1
+!s100 W^9L[`R;94H5o>BmnUD:e2
+Ibn=04oWfRK5jdLDQCMNd23
+R3
+!s105 RISC_V_sv_unit
+S1
+R0
+w1696852641
+8C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/RISC_V.sv
+FC:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/RISC_V.sv
+L0 3
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/RISC_V.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files|C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/RISC_V.sv|
+!i113 1
+R6
+R7
+R8
+n@r@i@s@c_@v
+vtb_top
+R1
+R2
+!i10b 1
+!s100 NUUhB5zjhKIFBPAU<7:eb1
+I@l:]3GP[]f`Rlnz3jDLWZ1
+R3
+!s105 tb_top_sv_unit
+S1
+R0
+w1696958914
+8C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/verif/tb_top.sv
+FC:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/verif/tb_top.sv
+L0 3
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/verif/tb_top.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/verif|C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/verif/tb_top.sv|
+!i113 1
+R6
+!s92 -sv -work work +incdir+C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/verif
+R8

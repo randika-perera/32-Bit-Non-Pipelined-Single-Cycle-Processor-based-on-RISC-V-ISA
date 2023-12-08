@@ -1,0 +1,189 @@
+# Reading C:/intelFPGA_lite/17.1/modelsim_ase/tcl/vsim/pref.tcl
+# do RISCV_CPU_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/17.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files {C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/Controller.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:38:02 on Oct 14,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files" C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/Controller.sv 
+# -- Compiling module Controller
+# 
+# Top level modules:
+# 	Controller
+# End time: 19:38:02 on Oct 14,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/verif {C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/verif/tb_top.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:38:02 on Oct 14,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/verif" C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/verif/tb_top.sv 
+# -- Compiling module tb_top
+# 
+# Top level modules:
+# 	tb_top
+# End time: 19:38:02 on Oct 14,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files {C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/RISC_V.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:38:02 on Oct 14,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files" C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/RISC_V.sv 
+# -- Compiling module RISC_V
+# 
+# Top level modules:
+# 	RISC_V
+# End time: 19:38:02 on Oct 14,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files {C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/RegFile.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:38:02 on Oct 14,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files" C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/RegFile.sv 
+# -- Compiling module RegFile
+# 
+# Top level modules:
+# 	RegFile
+# End time: 19:38:02 on Oct 14,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files {C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/mux2.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:38:02 on Oct 14,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files" C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/mux2.sv 
+# -- Compiling module mux2
+# 
+# Top level modules:
+# 	mux2
+# End time: 19:38:02 on Oct 14,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files {C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/instructionmemory.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:38:02 on Oct 14,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files" C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/instructionmemory.sv 
+# -- Compiling module instructionmemory
+# 
+# Top level modules:
+# 	instructionmemory
+# End time: 19:38:02 on Oct 14,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files {C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/imm_Gen.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:38:02 on Oct 14,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files" C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/imm_Gen.sv 
+# -- Compiling module imm_Gen
+# 
+# Top level modules:
+# 	imm_Gen
+# End time: 19:38:02 on Oct 14,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files {C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/flopr.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:38:02 on Oct 14,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files" C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/flopr.sv 
+# -- Compiling module flopr
+# 
+# Top level modules:
+# 	flopr
+# End time: 19:38:02 on Oct 14,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files {C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/Datapath.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:38:02 on Oct 14,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files" C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/Datapath.sv 
+# -- Compiling module Datapath
+# 
+# Top level modules:
+# 	Datapath
+# End time: 19:38:02 on Oct 14,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files {C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/datamemory.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:38:02 on Oct 14,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files" C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/datamemory.sv 
+# -- Compiling module datamemory
+# 
+# Top level modules:
+# 	datamemory
+# End time: 19:38:02 on Oct 14,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files {C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/data_extract.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:38:02 on Oct 14,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files" C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/data_extract.sv 
+# -- Compiling module data_extract
+# 
+# Top level modules:
+# 	data_extract
+# End time: 19:38:02 on Oct 14,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files {C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/ALUController.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:38:02 on Oct 14,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files" C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/ALUController.sv 
+# -- Compiling module ALUController
+# 
+# Top level modules:
+# 	ALUController
+# End time: 19:38:02 on Oct 14,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files {C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/alu.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:38:02 on Oct 14,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files" C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/alu.sv 
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# End time: 19:38:02 on Oct 14,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files {C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/adder_32.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:38:02 on Oct 14,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files" C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/adder_32.sv 
+# -- Compiling module adder_32
+# 
+# Top level modules:
+# 	adder_32
+# End time: 19:38:02 on Oct 14,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files {C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/adder.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:38:02 on Oct 14,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files" C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/Design_Files/adder.sv 
+# -- Compiling module adder
+# 
+# Top level modules:
+# 	adder
+# End time: 19:38:02 on Oct 14,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vsim -gui -l msim_transcript work.tb_top
+# vsim -gui -l msim_transcript work.tb_top 
+# Start time: 19:38:07 on Oct 14,2023
+# Loading sv_std.std
+# Loading work.tb_top
+# Loading work.RISC_V
+# Loading work.Controller
+# Loading work.ALUController
+# Loading work.Datapath
+# Loading work.adder
+# Loading work.adder_32
+# Loading work.mux2
+# Loading work.flopr
+# Loading work.instructionmemory
+# Loading work.data_extract
+# Loading work.RegFile
+# Loading work.imm_Gen
+# Loading work.alu
+# Loading work.datamemory
+run -all
+# ** Note: $finish    : C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/verif/tb_top.sv(27)
+#    Time: 1300 ns  Iteration: 0  Instance: /tb_top
+# 1
+# Break in Module tb_top at C:/intelFPGA_lite/17.1/200000X_CPU_Design_Test_Runs/200462U_RISCV/verif/tb_top.sv line 27
+# End time: 19:40:05 on Oct 14,2023, Elapsed time: 0:01:58
+# Errors: 0, Warnings: 0
